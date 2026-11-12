@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Chez Sylvie, Chardonne — Avant / Après</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#12110f;--ink:#f4f0e9;--mute:#aaa398;--gold:#c8a96a;--line:rgba(244,240,233,.14)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-weight:500;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  h1,h2{font-family:Lora,Georgia,serif;font-weight:400;letter-spacing:-.01em}
+  header{padding:88px 0 56px}
+  header h1{font-size:clamp(44px,7vw,84px);line-height:1.02;margin-top:18px}
+  header h1 em{display:block;font-size:.55em;margin-top:10px;color:var(--ink)}
+  .rule{width:64px;height:2px;background:var(--gold);margin:30px 0 22px}
+  header p{font-size:18px;line-height:1.6;max-width:520px;color:#ddd6cb}
+  .hint{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-size:14px;color:var(--mute)}
+  .hint svg{flex:none}
+  section.room{padding:40px 0 72px;border-top:1px solid var(--line)}
+  .room-head{display:flex;align-items:baseline;gap:18px;margin-bottom:22px}
+  .room-head h2{font-size:clamp(30px,4vw,44px)}
+  .ba{position:relative;width:100%;aspect-ratio:1800/1344;overflow:hidden;border-radius:6px;user-select:none;-webkit-user-select:none;touch-action:pan-y;cursor:ew-resize;background:#000}
+  .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+  .ba .before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
+  .ba .bar{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;margin-left:-1px;background:var(--ink);box-shadow:0 0 12px rgba(0,0,0,.4)}
+  .ba .knob{position:absolute;top:50%;left:var(--pos,50%);width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:var(--ink);display:grid;place-items:center;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+  .ba .tag{position:absolute;top:18px;padding:9px 16px;border-radius:99px;font-size:12px;font-weight:600;letter-spacing:.2em;transition:opacity .2s}
+  .ba .tag.l{left:18px;background:rgba(18,17,15,.75);color:var(--ink)}
+  .ba .tag.r{right:18px;background:rgba(244,240,233,.92);color:var(--bg)}
+  .ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+  .ba:focus-within .knob{outline:2px solid var(--gold);outline-offset:3px}
+  .zoom{margin-top:14px;font-size:14px;color:var(--mute)}
+  .offer{padding:72px 0 96px;border-top:1px solid var(--line);display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end}
+  .offer h2{font-size:clamp(34px,5vw,58px);line-height:1.08;margin-top:16px}
+  .offer h2 em{display:block}
+  .offer ul{list-style:none;margin-top:28px}
+  .offer li{display:flex;gap:14px;font-size:17px;line-height:1.5;padding:7px 0}
+  .offer li::before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:var(--gold);margin-top:9px}
+  .price{font-family:Lora,serif;font-size:clamp(48px,6vw,72px)}
+  .price small{display:block;font-family:Inter,sans-serif;font-size:15px;color:var(--mute);margin-top:6px}
+  .sig{margin-top:36px}
+  .sig b{font-weight:500;font-size:17px;display:block}
+  .sig span{font-size:15px;color:var(--mute)}
+  @media (max-width:760px){header{padding:56px 0 36px}.offer{grid-template-columns:1fr;gap:28px}.ba .tag{top:12px;padding:7px 12px;font-size:11px}.ba .tag.l{left:12px}.ba .tag.r{right:12px}.ba .knob{width:46px;height:46px;margin:-23px 0 0 -23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Avant / Après · Retouche photo</div>
+    <h1>Chez Sylvie<em><i>Chardonne</i></em></h1>
+    <div class="rule"></div>
+    <p>Lumière, couleurs et netteté. Rien n'est ajouté, rien n'est retiré : votre logement, tel qu'il est.</p>
+    <div class="hint">
+      <svg width="34" height="16" viewBox="0 0 34 16" fill="none" aria-hidden="true"><path d="M8 2 2 8l6 6M26 2l6 6-6 6M2 8h30" stroke="#c8a96a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Faites glisser le curseur sur chaque photo pour comparer.
+    </div>
+  </header>
+
+  <section class="room">
+    <div class="room-head"><span class="eyebrow">01</span><h2>Salle à manger</h2></div>
+    <div class="ba" style="--pos:50%">
+      <img class="after" src="img/salle-apres.jpg" alt="Salle à manger, après retouche">
+      <img class="before" src="img/salle-avant.jpg" alt="Salle à manger, photo d'origine">
+      <span class="tag l">AVANT</span><span class="tag r">APRÈS</span>
+      <div class="bar"></div>
+      <div class="knob"><svg width="22" height="14" viewBox="0 0 22 14" aria-hidden="true"><path d="M7 1 1 7l6 6M15 1l6 6-6 6" fill="none" stroke="#12110f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <input type="range" min="0" max="100" value="50" step="0.1" aria-label="Comparer avant et après, salle à manger">
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room-head"><span class="eyebrow">02</span><h2>Chambre</h2></div>
+    <div class="ba" style="--pos:50%">
+      <img class="after" src="img/chambre-apres.jpg" alt="Chambre, après retouche">
+      <img class="before" src="img/chambre-avant.jpg" alt="Chambre, photo d'origine">
+      <span class="tag l">AVANT</span><span class="tag r">APRÈS</span>
+      <div class="bar"></div>
+      <div class="knob"><svg width="22" height="14" viewBox="0 0 22 14" aria-hidden="true"><path d="M7 1 1 7l6 6M15 1l6 6-6 6" fill="none" stroke="#12110f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <input type="range" min="0" max="100" value="50" step="0.1" aria-label="Comparer avant et après, chambre">
+    </div>
+  </section>
+
+  <section class="offer">
+    <div>
+      <div class="eyebrow">L'offre</div>
+      <h2>Toutes vos photos,<em><i>retouchées en 48 h.</i></em></h2>
+      <ul>
+        <li>Lumière, couleurs et netteté, photo par photo</li>
+        <li>Fidèle à votre logement : rien d'ajouté, rien de retiré</li>
+        <li>Livraison sous 48 heures, sans déplacement</li>
+      </ul>
+    </div>
+    <div>
+      <div class="price">CHF 49.–<small>forfait, l'ensemble de vos photos</small></div>
+      <div class="sig"><b>Mathias Reymond</b><span>Étudiant à l'EHL – Lausanne</span></div>
+    </div>
+  </section>
+</div>
+<script>
+document.querySelectorAll('.ba').forEach(function(ba){
+  var input=ba.querySelector('input'), tl=ba.querySelector('.tag.l'), tr=ba.querySelector('.tag.r');
+  function set(v){ba.style.setProperty('--pos',v+'%');tl.style.opacity=v<12?0:1;tr.style.opacity=v>88?0:1;}
+  input.addEventListener('input',function(){set(input.value)});
+  // direct pointer drag for smooth mobile + desktop use
+  var dragging=false;
+  function fromEvent(e){var r=ba.getBoundingClientRect();var x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;var v=Math.max(0,Math.min(100,x/r.width*100));input.value=v;set(v);}
+  ba.addEventListener('pointerdown',function(e){dragging=true;fromEvent(e);try{ba.setPointerCapture(e.pointerId)}catch(_){}});
+  ba.addEventListener('pointermove',function(e){if(dragging)fromEvent(e)});
+  ['pointerup','pointercancel','pointerleave'].forEach(function(t){ba.addEventListener(t,function(){dragging=false})});
+  set(50);
+});
+</script>
+</body>
+</html>
